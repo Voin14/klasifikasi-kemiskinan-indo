@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Analisis Kemiskinan Indonesia | Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed": "#3a0b00",
+                    "on-surface-variant": "#46464a",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#793018",
+                    "inverse-surface": "#2f3131",
+                    "on-tertiary-fixed-variant": "#454749",
+                    "on-primary-fixed": "#1b1b1d",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-low": "#f3f3f3",
+                    "primary-fixed": "#e4e2e4",
+                    "background": "#f9f9f9",
+                    "secondary-fixed": "#ffdbd0",
+                    "on-primary-container": "#868587",
+                    "primary": "#030304",
+                    "secondary-container": "#fe9979",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "inverse-primary": "#c8c6c8",
+                    "on-tertiary-container": "#848587",
+                    "outline": "#77767b",
+                    "primary-container": "#1d1d1f",
+                    "secondary": "#CC7053",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#5f5e60",
+                    "surface-bright": "#f9f9f9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#474649",
+                    "surface-dim": "#dadada",
+                    "surface": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-container": "#1b1d1f",
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary-fixed": "#e2e2e4",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c7c6ca",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#772f17",
+                    "surface-container-highest": "#e2e2e2",
+                    "secondary-fixed-dim": "#ffb59e",
+                    "tertiary-fixed-dim": "#c6c6c8",
+                    "inverse-on-surface": "#f0f1f1",
+                    "primary-fixed-dim": "#c8c6c8",
+                    "surface-container": "#eeeeee",
+                    "on-error": "#ffffff",
+                    "tertiary": "#020203",
+                    "on-background": "#1a1c1c",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "section-gap": "128px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "caption": ["Inter"],
+                    "display-lg": ["Playfair Display"],
+                    "label-md": ["Inter"],
+                    "headline-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-md": ["28px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Reveal on scroll styles */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Glassmorphism Header */
+        header {
+            transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+        }
+        header.scrolled {
+            background-color: rgba(249, 249, 249, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Pull Quote Styles */
+        .pull-quote-bar {
+            width: 2px;
+            background-color: #CC7053;
+            height: 100%;
+        }
+
+        /* Accessibility: Respect prefers-reduced-motion */
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-on-scroll, 
+            header, 
+            img, 
+            .hero-parallax {
+                transition: none !important;
+                transform: none !important;
+                opacity: 1 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-primary font-body-md overflow-x-hidden">
+<!-- Navigation Overlay (Drawer) -->
+<div class="fixed inset-0 z-[70] hidden" id="drawer">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-sm" onclick="toggleDrawer()"></div>
+<aside class="h-full w-80 fixed left-0 top-0 z-[60] bg-surface shadow-2xl flex flex-col p-6 space-y-4 transform -translate-x-full transition-transform duration-300 ease-out" id="drawer-content">
+<div class="flex justify-between items-center mb-8">
+<span class="font-headline-md text-headline-md text-primary tracking-tight">ANALISIS KEMISKINAN</span>
+<button class="p-2 cursor-pointer active:scale-95 transition-transform" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="text-secondary bg-secondary-container/10 px-4 py-3 rounded-xl font-label-md flex items-center gap-4" href="#ringkasan-hasil">
+<span class="material-symbols-outlined">insights</span> Ringkasan Hasil
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-container-high transition-colors font-label-md flex items-center gap-4" href="#metodologi">
+<span class="material-symbols-outlined">map</span> Data &amp; EDA
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-container-high transition-colors font-label-md flex items-center gap-4" href="#metodologi">
+<span class="material-symbols-outlined">analytics</span> Preprocessing
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-container-high transition-colors font-label-md flex items-center gap-4" href="#temuan">
+<span class="material-symbols-outlined">description</span> Modeling KNN
+            </a>
+<a class="text-on-surface-variant px-4 py-3 hover:bg-surface-container-high transition-colors font-label-md flex items-center gap-4" href="#kesimpulan">
+<span class="material-symbols-outlined">info</span> Kesimpulan
+            </a>
+</nav>
+</aside>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 border-b border-primary/5" id="main-header">
+<div class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<button class="cursor-pointer active:scale-95 transition-transform p-1" onclick="toggleDrawer()">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-label-md font-label-md text-secondary font-bold hover:opacity-70 transition-opacity" href="#ringkasan-hasil">HASIL ANALISIS</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:opacity-70 transition-opacity" href="#temuan">LAPORAN</a>
+</div>
+</div>
+<a class="font-headline-md text-headline-md tracking-tight text-primary uppercase absolute left-1/2 -translate-x-1/2" href="/">
+            ANALISIS KEMISKINAN
+        </a>
+<div class="flex items-center gap-4">
+<button class="cursor-pointer active:scale-95 transition-transform p-1">
+<span class="material-symbols-outlined text-primary">search</span>
+</button>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 font-label-md hover:opacity-90 transition-opacity rounded-full">
+                RINGKASAN
+            </button>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative w-full h-[85vh] overflow-hidden">
+<img alt="Editorial hero" class="hero-parallax w-full h-full object-cover scale-110" id="hero-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4dptTTtP4wY33QHxTaCFWjXuV_E43rcyK7SXjbqUu3spZLmyGaZmt8Lk6hJ9RclLZiT-f-8XKUGAiaEs8u785d1yE6s_T8GQek4cOA-pJa7JFr79KVPzvyif0CGXxdQx73WYGVG75kly0t5CgqwMrDhyeNI5_dTG-vZyStTwlT9MYCOV8FSiseu5P0HXS0PhLzJQEoJc4UTq8sfl24pvYSPAZE1q3LT6ysn3tCpennQkRK9FxuvO-1934RJjw0Ccj2q3HVAPejHY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex flex-col justify-end px-margin-mobile md:px-margin-desktop pb-16 max-w-container-max mx-auto w-full">
+<div class="reveal-on-scroll max-w-3xl">
+<h1 class="font-display-lg-mobile md:text-display-lg md:font-display-lg text-white mb-6">
+                    Membaca jejak <span class="italic text-[#CC7053]">kemiskinan</span> lewat data Indonesia.
+                </h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-xl">
+                    Ringkasan end-to-end dari EDA, preprocessing, PCA, dan KNN untuk klasifikasi tingkat kemiskinan kabupaten/kota.
+                </p>
+</div>
+</div>
+</section>
+<!-- Statistics Row -->
+<section class="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="ringkasan-hasil">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="reveal-on-scroll p-8 bg-surface-container-low rounded-xl border border-primary/5 group hover:border-secondary/20 transition-all duration-500">
+<span class="text-secondary font-label-md uppercase tracking-widest mb-4 block">Parameter Model</span>
+<h3 class="font-headline-lg text-headline-lg mb-2">Best K = 3</h3>
+<p class="text-on-surface-variant font-body-md">Nilai k terbaik dipilih dari rentang 3-20 menggunakan validasi silang manual.</p>
+</div>
+<div class="reveal-on-scroll p-8 bg-surface-container-low rounded-xl border border-primary/5 group hover:border-secondary/20 transition-all duration-500" style="transition-delay: 100ms;">
+<span class="text-secondary font-label-md uppercase tracking-widest mb-4 block">Akurasi Uji</span>
+<h3 class="font-headline-lg text-headline-lg mb-2">100%</h3>
+<p class="text-on-surface-variant font-body-md">Akurasi, presisi, recall, F1, dan ROC-AUC pada data uji seluruhnya mencapai 1.00.</p>
+</div>
+<div class="reveal-on-scroll p-8 bg-surface-container-low rounded-xl border border-primary/5 group hover:border-secondary/20 transition-all duration-500" style="transition-delay: 200ms;">
+<span class="text-secondary font-label-md uppercase tracking-widest mb-4 block">Komposisi Data Uji</span>
+<h3 class="font-headline-lg text-headline-lg mb-2">91 : 12</h3>
+<p class="text-on-surface-variant font-body-md">Distribusi kelas tidak miskin dan miskin pada 103 sampel data testing.</p>
+</div>
+</div>
+</section>
+<!-- Pipeline Summary -->
+<section class="py-8 md:py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="metodologi">
+<div class="reveal-on-scroll mb-10">
+<span class="text-secondary font-label-md uppercase tracking-widest mb-2 block">Metodologi</span>
+<h2 class="font-headline-lg text-headline-lg">Alur Analisis yang Ditampilkan</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<article class="reveal-on-scroll p-8 bg-surface-container-low rounded-xl border border-primary/5">
+<h3 class="font-headline-md text-headline-md mb-4">Data Understanding &amp; EDA</h3>
+<p class="text-on-surface-variant font-body-md mb-3">Dataset klasifikasi kemiskinan Indonesia dipadukan dengan indikator IKM/BPS, meliputi indikator sosial-ekonomi seperti IPM, sanitasi, air minum, TPAK, pengangguran, dan PDRB.</p>
+<p class="text-on-surface-variant font-body-md">Tahap eksplorasi menemukan kebutuhan perbaikan tipe data, keberadaan missing value, dan duplikasi data sebelum model dilatih.</p>
+</article>
+<article class="reveal-on-scroll p-8 bg-surface-container-low rounded-xl border border-primary/5" style="transition-delay: 100ms;">
+<h3 class="font-headline-md text-headline-md mb-4">Preprocessing</h3>
+<p class="text-on-surface-variant font-body-md mb-3">Kolom numerik yang semula bertipe object dikonversi ke numerik, lalu data dibersihkan dengan penghapusan missing value dan pengecekan duplikasi ulang.</p>
+<p class="text-on-surface-variant font-body-md">Normalisasi Min-Max diterapkan agar seluruh indikator berada pada skala yang seragam sebelum tahap encoding dan reduksi dimensi.</p>
+</article>
+<article class="reveal-on-scroll p-8 bg-surface-container-low rounded-xl border border-primary/5" style="transition-delay: 150ms;">
+<h3 class="font-headline-md text-headline-md mb-4">Representasi Fitur</h3>
+<p class="text-on-surface-variant font-body-md mb-3">Fitur kategorikal Provinsi dan Kab/Kota diencode menggunakan one-hot encoding, kemudian digabung dengan fitur numerik yang telah dinormalisasi.</p>
+<p class="text-on-surface-variant font-body-md">PCA mereduksi dimensi fitur menjadi 10 komponen utama untuk menyederhanakan ruang fitur tanpa menghilangkan informasi penting.</p>
+</article>
+<article class="reveal-on-scroll p-8 bg-surface-container-low rounded-xl border border-primary/5" style="transition-delay: 200ms;">
+<h3 class="font-headline-md text-headline-md mb-4">Modeling &amp; Evaluasi</h3>
+<p class="text-on-surface-variant font-body-md mb-3">Data dipisah 80/20 dengan stratifikasi kelas. Prediksi dilakukan menggunakan implementasi KNN manual berbasis jarak Euclidean.</p>
+<p class="text-on-surface-variant font-body-md">Evaluasi menunjukkan performa sangat tinggi pada data uji, dengan confusion matrix tanpa kesalahan prediksi pada kedua kelas.</p>
+</article>
+</div>
+</section>
+<!-- Pull Quote -->
+<section class="reveal-on-scroll py-16 flex justify-center">
+<div class="flex items-stretch gap-8 max-w-4xl px-margin-mobile">
+<div class="pull-quote-bar hidden md:block"></div>
+<blockquote class="font-headline-md text-headline-md text-center md:text-left text-primary/80 italic py-4">
+                "Persentase Kemiskinan (PC1) muncul sebagai sinyal terkuat dalam model, sementara PDRB dan Pengeluaran per Kapita menjadi kontributor pendukung."
+            </blockquote>
+<div class="pull-quote-bar hidden md:block"></div>
+</div>
+</section>
+<!-- Editorial Grid -->
+<section class="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="temuan">
+<div class="flex justify-between items-end mb-12 reveal-on-scroll">
+<div>
+<span class="text-secondary font-label-md uppercase tracking-widest mb-2 block">Temuan Utama</span>
+<h2 class="font-headline-lg text-headline-lg">Poin yang Perlu Ditampilkan</h2>
+</div>
+<a class="hidden md:flex items-center gap-2 font-label-md hover:text-secondary transition-colors" href="#">
+                LIHAT RINGKASAN <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- Story 1 -->
+<article class="reveal-on-scroll group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/3] rounded-sm mb-6 bg-surface-container">
+<img alt="The Urban Divide editorial visual" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Cc43kj640lPwgQed64GJPXG-DUZ_WSVd4bBY04cHpDyJGp-YP3ULwrVcsQBwJfPmcDl3PGxEGkgyfpR5rksu6TvtLk6qUjltyenFZ6W19ifJqO7re7BF_m_OV62-3-oZqzApJar5ijUdktcmfKT8KheEAVBxRhNyrwBxjm1PqajYKXgWZLqmeMmsK1kUBD_xPVJ36HTiAyN1S6fB3XouhJMPuILWS-BmwMM4abBe1qIm9WCF9CinnVIGuNTejzxXZXCa7wWIgSY"/>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-2 text-caption font-caption text-on-surface-variant tracking-wider uppercase">
+<span>Data Quality</span>
+<span class="w-1 h-1 bg-secondary rounded-full"></span>
+<span>Preprocessing</span>
+</div>
+<h3 class="font-headline-md text-headline-md group-hover:text-secondary transition-colors">Data Dibersihkan Sebelum Dimodelkan</h3>
+<p class="text-on-surface-variant line-clamp-3">
+                        Kolom indikator yang masih bertipe object dikonversi menjadi numerik. Missing value ditangani melalui penghapusan baris kosong dan duplikasi dicek ulang agar data siap untuk training.
+                    </p>
+<button class="font-label-md border-b border-primary/20 pb-1 group-hover:border-secondary transition-colors uppercase">Lihat Detail</button>
+</div>
+</article>
+<!-- Story 2 -->
+<article class="reveal-on-scroll group cursor-pointer" style="transition-delay: 150ms;">
+<div class="relative overflow-hidden aspect-[4/3] rounded-sm mb-6 bg-surface-container">
+<img alt="Resilience in Focus editorial portrait" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW6fWPl1EH0X9yyeEg680ihnK_hmG5DQCezxUdIMEw1_bNvE1ykpENjyqEXLyLpyGm6ysYdHpl1KPWzEHEuNFbLfkpFrGdTmRHxjs04gWSI2IMfYAIvxSLZ_vsAeTUv225qYFzRxciMP5yKW89o_JSEU294w19U0Y_NUIS9cUwBya07o4XNFjo-QfSKqh-TtQq4-GowGcmYC75yLeX-ag-V7JhjWiJvC5nqAh4zZWhP3POg1ZTs4lB9FY2bbMHeM9OogPzdMM3UtY"/>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-2 text-caption font-caption text-on-surface-variant tracking-wider uppercase">
+<span>Model Result</span>
+<span class="w-1 h-1 bg-secondary rounded-full"></span>
+<span>Evaluasi KNN</span>
+</div>
+<h3 class="font-headline-md text-headline-md group-hover:text-secondary transition-colors">KNN + PCA Memberi Prediksi Konsisten</h3>
+<p class="text-on-surface-variant line-clamp-3">
+                        Dengan PCA 10 komponen dan nilai k terbaik 3, model menghasilkan confusion matrix sempurna pada data uji. Fitur terpenting didominasi PC1, lalu diikuti PC2 dan PC6.
+                    </p>
+<button class="font-label-md border-b border-primary/20 pb-1 group-hover:border-secondary transition-colors uppercase">Lihat Detail</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="bg-primary-container text-on-primary py-section-gap px-margin-mobile reveal-on-scroll overflow-hidden relative" id="kesimpulan">
+<div class="max-w-container-max mx-auto text-center relative z-10">
+<h2 class="font-headline-lg text-headline-lg mb-6 text-white">Kesimpulan Analisis</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-12 max-w-2xl mx-auto">
+                Faktor paling dominan untuk klasifikasi kemiskinan adalah Persentase Kemiskinan. Variabel ekonomi seperti PDRB dan Pengeluaran per Kapita memberi kontribusi tambahan, sementara komponen lain relatif kecil setelah reduksi dimensi.
+            </p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto" onsubmit="event.preventDefault();">
+<input class="bg-transparent border-b border-white/30 text-white placeholder:text-white/50 py-3 focus:outline-none focus:border-secondary transition-colors flex-grow" placeholder="Catatan tindak lanjut analisis" type="text"/>
+<button class="bg-secondary text-white px-8 py-3 font-label-md hover:bg-secondary/90 transition-colors rounded-sm uppercase tracking-widest">Simpan Ringkasan</button>
+</form>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap mt-section-gap border-t border-primary/5 bg-surface">
+<div class="flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-8">
+<div class="font-headline-md text-headline-md text-primary tracking-tight uppercase">
+            ANALISIS KEMISKINAN
+        </div>
+<nav class="flex flex-wrap justify-center gap-6 md:gap-12">
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors" href="#metodologi">Data Understanding</a>
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors" href="#metodologi">Preprocessing</a>
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors" href="#temuan">Modeling KNN</a>
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors" href="#ringkasan-hasil">Evaluasi</a>
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors" href="#kesimpulan">Kesimpulan</a>
+</nav>
+<div class="text-on-surface-variant/60 font-caption text-caption max-w-md">
+            © 2026 Analisis Kemiskinan Editorial. Sumber data: Kaggle (Klasifikasi tingkat kemiskinan di Indonesia), disesuaikan dengan indikator IKM/BPS.
+        </div>
+</div>
+</footer>
+<script>
+    // IntersectionObserver for Scroll Reveals
+    const revealObserverOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, revealObserverOptions);
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
+
+    // Scroll listener for Header and Parallax
+    const header = document.getElementById('main-header');
+    const heroImage = document.getElementById('hero-image');
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+
+        // Header Glassmorphism
+        if (scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        // Hero Parallax (very subtle)
+        if (window.innerWidth > 768 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const parallaxVal = scrollY * 0.15;
+            heroImage.style.transform = `translate3d(0, ${parallaxVal}px, 0) scale(1.1)`;
+        }
+    }, { passive: true });
+
+    // Drawer logic
+    function toggleDrawer() {
+        const drawer = document.getElementById('drawer');
+        const content = document.getElementById('drawer-content');
+        
+        if (drawer.classList.contains('hidden')) {
+            drawer.classList.remove('hidden');
+            setTimeout(() => content.classList.remove('-translate-x-full'), 10);
+        } else {
+            content.classList.add('-translate-x-full');
+            setTimeout(() => drawer.classList.add('hidden'), 300);
+        }
+    }
+</script>
+</body></html>
